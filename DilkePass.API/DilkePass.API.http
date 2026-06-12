@@ -1,0 +1,6 @@
+@DilkePass.API_HostAddress = http://localhost:5031
+
+GET {{DilkePass.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
