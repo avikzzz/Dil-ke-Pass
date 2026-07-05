@@ -41,5 +41,15 @@ namespace DilkePass.Infrastructure.Database.Repositories
 
             return isExist; 
         }
+
+
+        public async Task<Price> GetEffectivePriceAsync(int placeId, string visitorType, DateTime visitDate)
+        {
+            var price = await _context.Prices
+                .Where(c=>c.VisitorType==visitorType && c.PlaceId==placeId && c.EffectiveDate<=visitDate && c.ExpriryDate>visitDate)
+                .FirstOrDefaultAsync();
+            return price;
+
+        }
     }
 }

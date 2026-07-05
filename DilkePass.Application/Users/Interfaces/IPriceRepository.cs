@@ -14,5 +14,7 @@ namespace DilkePass.Application.Users.Interfaces
         public Task<TouristType?> GetVisitorType(string type);
 
         public Task<bool> IsPriceExist(int placeId, string visitorType, DateTime effectiveDate, DateTime expiryDate);
+
+        public  Task<Price> GetEffectivePriceAsync(int placeId, string visitorType, DateTime visitDate);
     }
 }
