@@ -42,30 +42,31 @@ The backend exposes REST APIs that will be consumed by future frontend applicati
 
 The project follows Clean Architecture to maintain separation of concerns and scalability.
 
-DilkePass
-│
-├── DilkePass.API
-│   ├── Controllers
-│   └── Configuration
-│
-├── DilkePass.Application
-│   ├── Features
-│   ├── DTOs
-│   ├── Commands
-│   ├── Queries
-│   └── Interfaces
-│
-├── DilkePass.Domain
-│   ├── Entities
-│   ├── Enums
-│   └── Common
-│
-├── DilkePass.Infrastructure
-│   ├── Persistence
-│   ├── Repositories
-│   └── Services
-│
-└── DilkePass.sln
+• DilkePass
+  • DilkePass.API
+    • Controllers
+    • Configuration
+
+  • DilkePass.Application
+    • Features
+    • DTOs
+    • Commands
+    • Queries
+    • Interfaces
+
+  • DilkePass.Domain
+    • Entities
+    • Enums -- Yet to be implemented
+    • Common
+
+  • DilkePass.Infrastructure
+    • Database
+      * AppDbContext
+    • Repositories
+    • Security
+      *JwtTokenServices
+
+  • DilkePass.sln
 ```
 
 
