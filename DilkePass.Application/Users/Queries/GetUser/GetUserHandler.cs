@@ -1,5 +1,5 @@
-﻿using DilkePass.Application.Users.DTOs;
-using DilkePass.Application.Users.Interfaces;
+﻿using DilkePass.Application.Interfaces;
+using DilkePass.Application.Users.DTOs;
 using DilkePass.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DomainUser= DilkePass.Domain.Entities.User;
+using DomainUser = DilkePass.Domain.Entities.User;
 namespace DilkePass.Application.Users.Queries.GetUser
 {
     public class GetUserHandler

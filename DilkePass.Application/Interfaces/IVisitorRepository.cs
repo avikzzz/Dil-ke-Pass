@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DilkePass.Application.Users.Interfaces
+namespace DilkePass.Application.Interfaces
 {
     public interface IVisitorRepository
     {
@@ -15,5 +15,9 @@ namespace DilkePass.Application.Users.Interfaces
         public Task<Tourist> GetParentUserbyVisitor(int visitorId);
          
         public Task<string> GetVistorTypeByVistorAge (int vistorAge);
+
+        public Task<List<Tourist>> GetVisitorsbyParentUser(int userId);
+
+        public Task AddVisitorAsync (Tourist visitor);
     }
 }

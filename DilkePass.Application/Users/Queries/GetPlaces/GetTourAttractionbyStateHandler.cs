@@ -1,5 +1,5 @@
-﻿using DilkePass.Application.Users.DTOs;
-using DilkePass.Application.Users.Interfaces;
+﻿using DilkePass.Application.Interfaces;
+using DilkePass.Application.Users.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

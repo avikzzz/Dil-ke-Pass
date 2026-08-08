@@ -1,5 +1,5 @@
 ﻿using DilkePass.Application.Users.Commands.CreateUser;
-using DilkePass.Application.Users.Interfaces;
+using DilkePass.Application.Interfaces;
 using DilkePass.Application.Users.Queries.GetUser;
 using DilkePass.Application.Users.Commands.CreateUser;
 using DilkePass.Application.Users.DTOs;

@@ -1,5 +1,3 @@
-
-using DilkePass.Application.Users.Interfaces;
 using DilkePass.Application.Users.Commands.CreateUser;
 using DilkePass.Infrastructure.Database;
 using DilkePass.Infrastructure.Database.Repositories;
@@ -14,6 +12,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using DilkePass.Application.Users.Queries.GetEffectivePrice;
+using DilkePass.Application.Interfaces;
+using DilkePass.Application.Visitors.Commands.AddVisitors;
+using DilkePass.Application.Visitors.Queries.GetVisitors;
 
 
 namespace DilkePass.API
@@ -48,6 +49,9 @@ namespace DilkePass.API
 
             builder.Services.AddScoped<ITourAttractionsRespository, TourAttractionRepository>();
             builder.Services.AddScoped<CreateTourAttractionHandler>();
+            builder.Services.AddScoped<IVisitorRepository, VisitorRepository>();
+            builder.Services.AddScoped<AddVisitorsCommandHandler>();
+            builder.Services.AddScoped<GetVisitorDetailsQueryHandler>();
             builder.Services.AddScoped<IJwtTokenServices, JwtTokenServices>();
 
 

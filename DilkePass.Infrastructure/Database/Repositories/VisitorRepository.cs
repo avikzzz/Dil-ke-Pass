@@ -1,4 +1,4 @@
-﻿using DilkePass.Application.Users.Interfaces;
+﻿using DilkePass.Application.Interfaces;
 using DilkePass.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -42,6 +42,22 @@ namespace DilkePass.Infrastructure.Database.Repositories
             }
 
             return tourType;
+        }
+
+        public async Task AddVisitorAsync(Tourist tourist)
+        {
+                 await _context
+                .Tourists.AddAsync(tourist);
+
+        }
+
+        public async Task<List<Tourist>> GetVisitorsbyParentUser(int userId)
+        {
+            List<Tourist> tourists = await _context.Tourists
+                .Where(c=>c.UserId == userId)
+                .ToListAsync();
+
+            return tourists;
         }
     }
 }

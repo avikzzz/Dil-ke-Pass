@@ -14,4 +14,8 @@
     <ProjectReference Include="..\DilkePass.Domain\DilkePass.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Visitors\Interfaces\" />
+  </ItemGroup>
+
 </Project>

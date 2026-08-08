@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DilkePass.Application.Users.Interfaces
+namespace DilkePass.Application.Interfaces
 {
     public interface ITourAttractionsRespository
     {

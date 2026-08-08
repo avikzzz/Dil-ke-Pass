@@ -1,4 +1,4 @@
-﻿using DilkePass.Application.Users.Interfaces;
+﻿using DilkePass.Application.Interfaces;
 using DilkePass.Domain.Entities;
 using Microsoft.Win32.SafeHandles;
 using System;
@@ -23,7 +23,7 @@ namespace DilkePass.Application.Users.Queries.GetEffectivePrice
          }
         public async Task<decimal> GetEffectivePriceAsync( GetEffectivePriceQuery getEffectivePriceQuery)
         {
-            // visitorId die visitor type fetch korbo-- not possible. Visitor Type is a master table having all the types.
+            // visitorId die visitor type fetch korbo-- not possible. "Visitor Type" is a master table having all the types.
             // Need to find the appropriate visitor type
             string visitorType;
             var touristWithParent = await _visitorRepository.GetParentUserbyVisitor(getEffectivePriceQuery.VistorId);

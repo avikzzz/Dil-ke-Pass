@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DomainUser = DilkePass.Domain.Entities.User;
-namespace DilkePass.Application.Users.Interfaces
+namespace DilkePass.Application.Interfaces
 {
     public interface IUserRepository
     {
         
         Task AddNewUserAsync(DomainUser user);
-        Task<User?> GetUserbyEmailAsync(string emailId);
+        Task<DomainUser?> GetUserbyEmailAsync(string emailId);
         //Task<User> GetUserbyPhoneNumberAsync(string phoneNum, string password);
         
         Task<DomainUser?> GetUserByIdAsync(int id);

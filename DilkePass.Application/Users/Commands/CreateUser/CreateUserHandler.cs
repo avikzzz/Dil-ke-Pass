@@ -1,12 +1,12 @@
 ﻿using DilkePass.Application.Users.DTOs;
 using DilkePass.Application.Users.Commands.CreateUser;
-using DilkePass.Application.Users.Interfaces;
 using DilkePass.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DilkePass.Application.Interfaces;
 
 namespace DilkePass.Application.Users.Commands.CreateUser
 {
