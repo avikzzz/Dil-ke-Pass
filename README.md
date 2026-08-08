@@ -42,6 +42,16 @@ The backend exposes REST APIs that will be consumed by future frontend applicati
 
 The project follows Clean Architecture to maintain separation of concerns and scalability.
 
+
+
+
+
+
+
+  
+```
+ARCITECTURE :
+
 • DilkePass
   • DilkePass.API
     • Controllers
@@ -67,16 +77,6 @@ The project follows Clean Architecture to maintain separation of concerns and sc
       *JwtTokenServices
 
   • DilkePass.sln
-
-
-
-
-
-
-
-  
-```
-
 
 ## Current Features
 
